@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+#infoSection {
+    background-image: url("./images/r3.jpg");
+    background-position: bottom center;
+    background-size: initial;
+    height: 90vh;
+    background-repeat:no-repeat;
+}
+
+
+#content {
+    height: 100%;
+}
+
+#pageHeader {
+    background-color: rgb(15, 11, 32);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 5rem;
+    color: rgb(248, 151, 6);
+    padding-bottom: .5rem;
+}
+
+#infoSection {
+    background-color: rgb(15, 11, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    height: calc(100vh - 14rem);
+    color: rgb(248, 151, 6);
+    text-shadow:black 2px 2px;
+}
+
+#pageFooter {
+    background-color: rgb(15, 11, 32);
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 9rem;
+    color: rgb(248, 151, 6);
+    text-align: center;
+}
+
+#navList {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30vw;
+    align-items: flex-end;
+    margin-right: 1rem;
+}
+
+#name {
+    margin-left: 5rem;
+    margin-top: .5rem;
+    font-size: 3rem;
+}
+
+.navBtn {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+#hoursTitle {
+    padding-top: 1rem; 
+    height: 2rem;
+}
+
+#contactTitle {
+    padding-top: 1rem;
+    height: 2rem;
+}
+
+#menuInfo {
+    font-size: 3.5rem;
+    text-decoration: underline .2rem;
+}
+
+.menuSection {
+    font-size: 2.5rem;
+    text-decoration: underline dotted .1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.itemName {
+    font-size: 1.75rem;
+}
+
+.foodItem {
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-align: center; 
+}
+
+#missionStatement {
+    font-size: 2.25rem;
+    margin: auto;
+    color: rgb(248, 151, 6);
+    text-shadow:black 2px 2px;
+    text-align: center;
+}
+
+#aboutContainer {
+    font-size: 3.25rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    color: rgb(248, 151, 6);
+    text-shadow:black 2px 2px;
+}
+
+#aboutInfo {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 45rem;
+    color: rgb(248, 151, 6);
+    text-shadow:black 2px 2px;
+}
+
+@media (max-width: 900px) {
+    #pageHeader {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 5rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    #navList {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 30vw;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #name {
+        margin-left: 0rem;
+        margin-top: 0rem;
+        font-size: 3rem;
+        margin: auto;
+    }
+    
+    .navBtn {
+        list-style-type: none;
+        font-size: 1.5rem;
+        margin-bottom: 0rem;
+        margin-right: 0rem;
+        cursor: pointer;
+    }
+
+    #menuButton {
+        padding: 0 1rem 0 1rem;
+    }
+
+    #pageFooter {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    #aboutInfo {
+        width: 100%;
+    }
+
+    .itemName {
+       font-size: 1.6rem;
+    }
+
+    #name {
+        font-size: 2.5rem;
+    }
+    
+    .navBtn {
+
+    }
+}
+
+@media (max-height: 400px) {
+    #infoSection {
+        min-height: 300px;
+    }
+}
